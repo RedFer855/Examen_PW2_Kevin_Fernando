@@ -6,6 +6,29 @@
   </header>
 
   <div class="datos">
+    <section
+      class="granulo-cmr"
+      aria-labelledby="datos-cmr"
+      data-granulo-cmr
+      data-texto-error="{{@root.datos.textos.errorCmr}}"
+    >
+      <img class="granulo-cmr__imagen" data-cmr-imagen alt="" width="96" height="48" loading="lazy" hidden />
+      <div class="granulo-cmr__cuerpo">
+        <div class="granulo-cmr__cabecera">
+          <h3 class="granulo-cmr__titulo" id="datos-cmr">{{@root.datos.textos.tituloCmr}}</h3>
+          <span class="granulo-cmr__estado" data-cmr-estado>{{@root.datos.textos.cargandoCmr}}</span>
+        </div>
+        <p class="granulo-cmr__nombre">
+          <strong data-cmr-titulo>EMITL3ASA · v002</strong>
+          <span class="granulo-cmr__dataset" data-cmr-dataset></span>
+        </p>
+        <p class="granulo-cmr__meta">
+          <span data-cmr-meta></span>
+          <a class="recurso__enlace" data-cmr-enlace href="https://cmr.earthdata.nasa.gov/search/granules.json?short_name=EMITL3ASA&version=002&page_size=1" rel="noopener" target="_blank" hidden></a>
+        </p>
+      </div>
+    </section>
+
     <div class="datos__agencias">
       {{#each @root.datos.agencias}}
         <section class="datos__agencia" aria-labelledby="datos-{{id}}">

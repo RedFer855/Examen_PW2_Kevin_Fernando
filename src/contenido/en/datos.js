@@ -21,5 +21,8 @@ export const datos = {
     fuente: 'Source: challenge Resources tab',
     tituloTecnologias: 'Technologies and tools',
     tecnologiasPendiente: 'pending',
+    tituloCmr: 'Live query · NASA CMR API (EMITL3ASA v002)',
+    cargandoCmr: 'Querying cmr.earthdata.nasa.gov…',
+    errorCmr: 'Could not reach CMR right now',
   },
 };

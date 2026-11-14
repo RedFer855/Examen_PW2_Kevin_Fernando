@@ -21,5 +21,8 @@ export const datos = {
     fuente: 'Fuente: pestaña Resources del reto',
     tituloTecnologias: 'Tecnologías y herramientas',
     tecnologiasPendiente: 'pendiente',
+    tituloCmr: 'Consulta en vivo · NASA CMR API (EMITL3ASA v002)',
+    cargandoCmr: 'Consultando cmr.earthdata.nasa.gov…',
+    errorCmr: 'No se pudo consultar CMR en este momento',
   },
 };

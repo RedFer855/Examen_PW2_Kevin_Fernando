@@ -1,0 +1,30 @@
+/**
+ * Los 21 sitios objetivo: 9 regiones de la Luna y 12 sitios de Marte. Los nombres son propios y no se traducen.
+ * @typedef {{ id: string, nombre: string, cuerpo: 'luna'|'marte' }} SitioObjetivo
+ */
+
+// Fuente: analogos-space-apps-2026/contexto/32-sitios/SL-NN-*.md (título de cada ficha) y contexto/INDEX-sitios.md
+/** @type {SitioObjetivo[]} */
+export const sitiosObjetivo = [
+  { id: 'SL-01', nombre: 'Peak near Cabeus B', cuerpo: 'luna' },
+  { id: 'SL-02', nombre: 'Haworth', cuerpo: 'luna' },
+  { id: 'SL-03', nombre: 'Malapert Massif', cuerpo: 'luna' },
+  { id: 'SL-04', nombre: 'Mons Mouton Plateau', cuerpo: 'luna' },
+  { id: 'SL-05', nombre: 'Mons Mouton', cuerpo: 'luna' },
+  { id: 'SL-06', nombre: 'Nobile Rim 1', cuerpo: 'luna' },
+  { id: 'SL-07', nombre: 'Nobile Rim 2', cuerpo: 'luna' },
+  { id: 'SL-08', nombre: 'de Gerlache Rim 2', cuerpo: 'luna' },
+  { id: 'SL-09', nombre: 'Slater Plain', cuerpo: 'luna' },
+  { id: 'SL-10', nombre: 'Jezero', cuerpo: 'marte' },
+  { id: 'SL-11', nombre: 'Gale', cuerpo: 'marte' },
+  { id: 'SL-12', nombre: 'Mawrth Vallis', cuerpo: 'marte' },
+  { id: 'SL-13', nombre: 'Deuteronilus Mensae', cuerpo: 'marte' },
+  { id: 'SL-14', nombre: 'Noctis Landing', cuerpo: 'marte' },
+  { id: 'SL-15', nombre: 'Acheron Fossae', cuerpo: 'marte' },
+  { id: 'SL-16', nombre: 'Erebus Montes', cuerpo: 'marte' },
+  { id: 'SL-17', nombre: 'Arcadia Planitia (AP-1)', cuerpo: 'marte' },
+  { id: 'SL-18', nombre: 'Phlegra Montes (PM-1)', cuerpo: 'marte' },
+  { id: 'SL-19', nombre: 'Elysium Planitia (InSight)', cuerpo: 'marte' },
+  { id: 'SL-20', nombre: 'Utopia Planitia (Zhurong)', cuerpo: 'marte' },
+  { id: 'SL-21', nombre: 'Vastitas Borealis (Phoenix)', cuerpo: 'marte' },
+];

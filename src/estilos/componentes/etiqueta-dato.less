@@ -1,0 +1,21 @@
+.etiqueta-dato {
+  .etiqueta-mono();
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espacio-2);
+  justify-self: start;
+  width: fit-content;
+  padding: var(--espacio-1) var(--espacio-3);
+  border: 1px dashed var(--borde-fuerte);
+  border-radius: var(--radio-pildora);
+  font-size: 0.6875rem;
+  color: var(--texto-suave);
+
+  &__punto {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--violeta);
+    box-shadow: 0 0 0 3px fade(@violeta, 25%);
+  }
+}

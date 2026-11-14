@@ -1,0 +1,32 @@
+{{#> componentes/diapositiva}}
+  <div class="equipo">
+    {{> componentes/logo tamano="grande"}}
+    {{> componentes/antetitulo texto=@root.equipo.textos.antetitulo}}
+    <h2 class="oculto-visualmente" id="{{id}}-titulo">{{@root.equipo.textos.titulo}}</h2>
+    <p class="equipo__entradilla">{{@root.equipo.textos.entradilla}}</p>
+  </div>
+
+  <div class="equipo__contenido">
+    {{#if @root.equipo.integrantes.length}}
+      <ul class="equipo__integrantes">
+        {{#each @root.equipo.integrantes}}
+          <li class="integrante">
+            <p class="integrante__nombre">{{nombre}}</p>
+            <p class="integrante__rol">{{rol}}</p>
+            <p class="integrante__meta">GitHub · {{github}}</p>
+            <p class="integrante__pendiente">{{@root.equipo.textos.nombrePendiente}}</p>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p class="equipo__sin-integrantes">{{@root.equipo.textos.integrantesPendiente}}</p>
+    {{/if}}
+
+    <p class="equipo__contacto">{{@root.equipo.textos.contacto}}</p>
+
+    <footer class="equipo__pie">
+      <span>© {{@root.anio}} {{@root.sitio.equipo}} · {{@root.sitio.ciudad}}</span>
+      <span>{{@root.sitio.evento}}</span>
+    </footer>
+  </div>
+{{/componentes/diapositiva}}
